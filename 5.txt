@@ -1,63 +1,21 @@
-Build Disciplined Operating Habits in Execution, Time Management & Communication
+Complete the WIAM platform modernization (Flask to FastAPI containerized on-prem), extend workload identity access management to GCP, and prototype a unified cross-cloud access management tool. Assist with completion of the Azure RBAC custom role CICD pipeline cutover to CIAM-owned infrastructure.
 
-Category: Culture & Values
-CDRR Pillar 6: Talent & Engineering Excellence
+Key Deliverables
+- Complete WIAM on-prem migration from Flask monolith to FastAPI containerized architecture (carryover from 2025; test automation complete).
+- Assist with cutover of Azure RBAC custom role Terraform repo and CICD pipeline to CIAM-owned GRN with SDLC controls.
+- Extend WIAM self-service RBAC capabilities to GCP resources and projects using patterns proven in Azure.
+- POC a unified cross-cloud access management tool providing a single interface for workload identity RBAC across Azure and GCP. Present findings and recommendation to CIAM leadership for 2027 roadmap.
 
-Objective: Build disciplined habits in time management, delivery execution, and communication to directly address 2025 feedback on overcommitment, estimation accuracy, and message conciseness.
+Success Criteria
+- WIAM on-prem migration complete (FastAPI containerized) by early Q2 2026.
+- Azure RBAC custom role CICD cutover complete by end of Q1 / early Q2 2026.
+- GCP WIAM extension functional in non-prod by Q3 2026.
+- Unified cross-cloud tool POC demonstrated to CIAM leadership by Q4 2026.
 
-Focus Areas:
+Timeline
+Q1-Q2: WIAM on-prem migration signed off. Azure RBAC custom role CICD cutover complete.
+Q3: GCP WIAM extension delivered to non-prod. Begin unified tool POC.
+Q4: Unified tool POC demonstrated to leadership with recommendation.
 
-A. Time Management — Adopt and operationalize a single time-management system; protect daily deep-work time for priority workstreams.
-
-B. Delivery Predictability — Improve delivery predictability through estimation accuracy, Jira hygiene, capped concurrency, and proactive re-scoping when commitments shift.
-
-C. Communication Effectiveness — Improve communication effectiveness through headline-first messaging, structured meeting preparation, audience-calibrated depth, and peer feedback.
-
-Success Criteria:
-- Estimation within 20% on 75%+ of tasks by Q3
-- Concurrency capped at 3 or fewer active workstreams
-- 80%+ Say/Do completion rate on committed sprint deliverables by Q3
-- 90%+ adherence to pre-meeting prep and weekly self-reviews
-- Peer feedback on communication improvement collected and documented
-- Manager confirms sustained improvement at mid-year
-
-
-notes:
-
-EXECUTION PLAN — Goal 5
-
-This is the supporting execution plan shared with my manager. The goal text captures what gets evaluated; this captures how I execute it.
-
-TIME MANAGEMENT SYSTEM
-- Read Smart Brevity (VandeHei) by end of Q2 — doubles as communication framework
-- Complete Time Management Fundamentals on LinkedIn Learning (Dave Crenshaw, ~1.5 hrs) by end of Q2
-- Adopt daily time-blocking practice; protect 3+ hrs/day for deep work from Q3 onward
-
-DELIVERY DISCIPLINE
-- Maintain prioritized Jira backlog with effort estimates on all stories/epics
-- Cap concurrent workstreams at 3 (WIP limit)
-- Say/Do ratio: track % of committed sprint deliverables completed without carryover; target 80%+ by Q3
-- Weekly Friday review (~15 min): time audit, Jira status, priority alignment
-- No deadlines missed without re-scoping communicated 2+ weeks early
-- Review completion trends in biweekly 1:1s with Michael
-- Share selective stop-doing list at mid-year and year-end
-
-COMMUNICATION
-- Before each meeting as presenter/key contributor: 3-bullet prep (headline, ask/decision, one layer of detail on request)
-- Lead with conclusions; let audience pull for depth
-- Pause 2-3 seconds before responding to reduce interrupting
-- Calibrate technical depth to audience
-
-PEER FEEDBACK
-- Identify 3 peers (mix of CIAM squad + cross-team)
-- Mid-Year (Aug/Sep): lightweight 2-question Slack check-in on communication conciseness and meeting prep
-- Year-End (Nov/Dec): same format, compare to mid-year, include in self-assessment
-
-KNOWLEDGE SHARING
-- Publish 1 Jive blog post (Q3) sharing adopted system and how it applies to Cloud IAM work
-
-TIMELINE
-Apr: Friday review and pre-meeting prep habits start. Begin Smart Brevity and LinkedIn Learning course.
-May-Jun: Learning complete. Time-blocking system adopted. Say/Do baseline established.
-Q3: System in daily practice. 80%+ Say/Do rate. Blog post published. Mid-year peer feedback. Manager confirmation.
-Q4: Sustained adherence. Year-end peer feedback. Stop-doing list shared.
+Business Value
+Modernizes CIAM's core access management platform while extending coverage to GCP. Completes the RBAC custom role infrastructure migration, ensuring CIAM fully owns its Azure role management pipeline. The unified tool POC establishes a reference architecture for multi-cloud access governance.
