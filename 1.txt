@@ -1,27 +1,28 @@
+PERFORMANCE & IMPACT
+GOAL 1
 Transform Entra ID Application Lifecycle Management
 Objective
 Eliminate persistent human ownership of Entra ID application registrations across the Firm’s tenants by closing AP_1197326 by June 26, 2026. Replace standing Owner privileges with least-privilege, time-bound access through custom RBAC roles and self-service tooling. Transition app registration creation to SystemID and establish a unified identity metadata model to enable scalable lifecycle governance.
 Key Deliverables
 A.  Close AP_1197326 — Remove Human Owners from App Registrations
 Deliver a self-service model that enables application teams to manage required app registration and enterprise app settings without Owner permissions, followed by phased Owner removal with a documented exception process.
-•	Custom RBAC roles: Define and deploy least-privilege roles scoped to required app management functions.
-•	SPTool self-service platform: Repurpose SPTool for temporary access grants validated against TAM (eonid + environment matching), app registration and enterprise app configuration, and MFA opt-in for SaaS apps. POC by late April; production by June.
-•	SystemID handoff: Transition all new app registration creation to SystemID (ForgeRock front end).
-•	Phased Owner removal: Execute removal across eligible apps with an approved exception process for exempt use cases.
-Longer term, SPTool is positioned to serve as an MCP server, enabling integration with the AI-driven workload intelligence model to surface recommended configuration changes and developer guidance directly through the tool.
+–	Custom RBAC roles: Define and deploy least-privilege roles scoped to required app management functions.
+–	SPTool self-service platform: Repurpose SPTool for temporary access grants validated against TAM (eonid + environment matching), app registration and enterprise app configuration, and MFA opt-in for SaaS apps. POC by late April; production by June.
+–	SystemID handoff: Transition all new app registration creation to SystemID (ForgeRock front end).
+–	Phased Owner removal: Execute removal across eligible apps with an approved exception process for exempt use cases.
 B.  Unified Identity Metadata & CIDB Integration
 Today, identity metadata is fragmented: ForgeRock-created app registrations and enterprise apps use custom security attributes, while managed identities rely on Azure resource tags. There is no unified view that ties these objects together as Entra identities or relates them to federation and consent configurations. CIDB (CloudDataInventory on Snowflake) already ingests data from Azure Graph, AWS, TAI DW, and custom metadata sources—but lacks identity relationship data.
-•	Define a unified identification model that relates app registrations, enterprise apps, and managed identities regardless of metadata source (custom security attributes vs. resource tags).
-•	Extend CIDB to include identity relationship data, enabling a single view of Entra identity objects tied to their federation, consent, and ownership metadata.
-•	Surface orphaned, untagged, or inconsistently tagged identities for remediation.
-•	Establish this as the clean data foundation for the AI-driven workload intelligence initiative.
+–	Define a unified identification model that relates app registrations, enterprise apps, and managed identities regardless of metadata source (custom security attributes vs. resource tags).
+–	Extend CIDB to include identity relationship data, enabling a single view of Entra identity objects tied to their federation, consent, and ownership metadata.
+–	Surface orphaned, untagged, or inconsistently tagged identities for remediation.
+–	Establish this as the clean data foundation for the AI-driven workload intelligence initiative, where unified metadata and the least-privilege access model built in Workstream A provide the groundwork for eventual MCP-based tooling integration.
 Success Criteria
 •	AP_1197326 closure evidence submitted by June 26, 2026.
-•	SPTool in production as self-service platform (temporary access, app configuration, MFA opt-in).
-•	Custom RBAC roles deployed; users manage app settings without Owner permissions.
-•	100% of new app registrations created through SystemID.
-•	Phased Owner removal underway with measurable progress across eligible apps.
-•	Unified identity metadata model defined; CIDB extended with identity relationship data.
+•	SPTool in production as self-service platform (temporary access, app configuration, MFA opt-in) by June 2026.
+•	Custom RBAC roles deployed by May 2026; users manage app settings without Owner permissions.
+•	100% of new app registrations created through SystemID by end of June 2026.
+•	Phased Owner removal underway by July 2026; >80% of eligible apps remediated by December 2026.
+•	Unified identity metadata model defined by September 2026; CIDB extended with identity relationship data by November 2026.
 Target Timeline
 
 Apr	•	SPTool temporary access and configuration POC complete
@@ -32,9 +33,8 @@ May–Jun	•	AP_1197326 closure evidence submitted (hard deadline: June 26)
 •	SystemID handoff complete; begin phased Owner removal
 Q3	•	Unified identity metadata model defined; CIDB integration underway
 •	Continue phased Owner removal; track progress
-•	Explore SPTool MCP server integration with AI workload intelligence model
 Q4	•	CIDB identity data available; orphaned/inconsistent identities surfaced
 •	Owner removal >80% of eligible apps
-•	SPTool roadmap defined for federated credential configuration and credential management
 Business Value
 Removes a systemic identity risk by eliminating persistent human ownership of cloud app registrations while preserving developer velocity through self-service, time-bound access. Establishes durable lifecycle governance controls and a clean metadata foundation to support AI-driven workload intelligence and configuration recommendations.
+Goal 1 of 6  |  Performance & Impact  |  Draft  |  March 2026
