@@ -1,58 +1,63 @@
-Execution, Time Management & Communication Discipline
+Build Disciplined Operating Habits in Execution, Time Management & Communication
 
+Category: Culture & Values
 CDRR Pillar 6: Talent & Engineering Excellence
 
-Objective: Build disciplined habits across time management, delivery execution, and communication — ensuring work is estimated accurately, delivered completely, and communicated concisely.
+Objective: Build disciplined habits in time management, delivery execution, and communication to directly address 2025 feedback on overcommitment, estimation accuracy, and message conciseness.
 
-A. Adopt a Time Management System
-Read Smart Brevity (VandeHei) and complete Time Management Fundamentals on LinkedIn Learning (Dave Crenshaw) by end of Q2. Adopt a daily time-blocking practice; protect 3+ hrs/day for deep work on priority workstreams from Q3 onward. Publish 1 Jive post (Q3) sharing the adopted system and how it applies to Cloud IAM work.
+Focus Areas:
 
-B. Delivery Discipline & Estimation Transparency
-Maintain prioritized Jira backlog with estimates on all stories/epics. Cap concurrent workstreams at 3 (WIP limit). Achieve 80%+ Say/Do completion rate on committed sprint deliverables by Q3 — no carryover without proactive re-scoping communicated 2+ weeks early. Weekly Friday review (~15 min): time audit, Jira status, priority alignment. Review completion trends in biweekly 1:1s. Share selective stop-doing list at mid-year and year-end.
+A. Time Management — Adopt and operationalize a single time-management system; protect daily deep-work time for priority workstreams.
 
-C. Communication & Meeting Effectiveness
-Before each meeting as presenter/key contributor, prepare 3-bullet outline: headline, ask/decision, one layer of detail on request. Lead with conclusions; let audience pull for depth. Pause 2-3 seconds before responding to reduce interrupting. Calibrate depth to audience. Apply Smart Brevity as communication framework. Solicit lightweight peer feedback (2-question Slack check-in) from 3 peers at mid-year and year-end.
+B. Delivery Predictability — Improve delivery predictability through estimation accuracy, Jira hygiene, capped concurrency, and proactive re-scoping when commitments shift.
+
+C. Communication Effectiveness — Improve communication effectiveness through headline-first messaging, structured meeting preparation, audience-calibrated depth, and peer feedback.
 
 Success Criteria:
-- Time-blocking system adopted and in daily use by Q2
-- WIP limit of 3 concurrent workstreams maintained
-- 80%+ Say/Do sprint completion rate by Q3
-- Headline-first framework applied in all stakeholder meetings
-- Positive peer feedback on communication conciseness at mid-year
-- 1 Jive blog post published (Q3)
-- Manager confirmation of improvement at mid-year
+- Estimation within 20% on 75%+ of tasks by Q3
+- Concurrency capped at 3 or fewer active workstreams
+- 80%+ Say/Do completion rate on committed sprint deliverables by Q3
+- 90%+ adherence to pre-meeting prep and weekly self-reviews
+- Peer feedback on communication improvement collected and documented
+- Manager confirms sustained improvement at mid-year
 
-Notes
 
-SUPPORTING DETAIL — Goal 5
+notes:
 
-SMART ALIGNMENT
-- Specific: Three sub-goals with defined actions, named resources, and behavioral changes targeting every theme from 2025 review feedback.
-- Measurable: Say/Do completion rate (80%+), WIP limit (3), time-blocked hours (3+/day), peer feedback (2 rounds), blog post (1).
-- Achievable: One book, one course, lightweight weekly review (~15 min), pre-meeting prep (~5 min/meeting). Minimal overhead on top of engineering workload.
-- Relevant: Directly addresses all primary 2025 feedback — overcommitment, poor estimation, boiling the ocean, over-detailing, interrupting, meeting preparedness, audience awareness.
-- Time-bound: Book and course by Q2. System adopted Q2. Say/Do target by Q3. Peer feedback at mid-year and year-end.
+EXECUTION PLAN — Goal 5
 
-LEARNING RESOURCES
-- Smart Brevity — VandeHei, Allen & Schwartz | Concise communication, headline-first delivery | By end of Q2
-- Time Management Fundamentals — Dave Crenshaw (LinkedIn Learning, ~1.5 hrs) | Time budgeting, task capture, cognitive clutter | By end of Q2
+This is the supporting execution plan shared with my manager. The goal text captures what gets evaluated; this captures how I execute it.
 
-SAY/DO RATIO EXPLAINED
-Track the percentage of Jira stories/points committed at sprint start that are completed by sprint end without carryover. Target: 80%+. This measures reliable execution without the overhead of logging exact hours against estimates. Reviewed in biweekly 1:1s with Michael to show trend over time.
+TIME MANAGEMENT SYSTEM
+- Read Smart Brevity (VandeHei) by end of Q2 — doubles as communication framework
+- Complete Time Management Fundamentals on LinkedIn Learning (Dave Crenshaw, ~1.5 hrs) by end of Q2
+- Adopt daily time-blocking practice; protect 3+ hrs/day for deep work from Q3 onward
 
-PEER FEEDBACK APPROACH
-Identify 3 peers (mix of CIAM squad + cross-team). Two lightweight rounds:
-- Mid-Year (Aug/Sep): 2-question Slack message — "Have you noticed improvement in my communication conciseness and meeting prep? Any blind spots?"
-- Year-End (Nov/Dec): Same format. Compare to mid-year. Include in self-assessment.
-No formal survey. Takes peers <2 minutes. Document responses.
+DELIVERY DISCIPLINE
+- Maintain prioritized Jira backlog with effort estimates on all stories/epics
+- Cap concurrent workstreams at 3 (WIP limit)
+- Say/Do ratio: track % of committed sprint deliverables completed without carryover; target 80%+ by Q3
+- Weekly Friday review (~15 min): time audit, Jira status, priority alignment
+- No deadlines missed without re-scoping communicated 2+ weeks early
+- Review completion trends in biweekly 1:1s with Michael
+- Share selective stop-doing list at mid-year and year-end
+
+COMMUNICATION
+- Before each meeting as presenter/key contributor: 3-bullet prep (headline, ask/decision, one layer of detail on request)
+- Lead with conclusions; let audience pull for depth
+- Pause 2-3 seconds before responding to reduce interrupting
+- Calibrate technical depth to audience
+
+PEER FEEDBACK
+- Identify 3 peers (mix of CIAM squad + cross-team)
+- Mid-Year (Aug/Sep): lightweight 2-question Slack check-in on communication conciseness and meeting prep
+- Year-End (Nov/Dec): same format, compare to mid-year, include in self-assessment
+
+KNOWLEDGE SHARING
+- Publish 1 Jive blog post (Q3) sharing adopted system and how it applies to Cloud IAM work
 
 TIMELINE
-Apr: Friday review habit and pre-meeting prep start. Begin Smart Brevity and LinkedIn Learning course.
-May-Jun: Smart Brevity and course complete. Time-blocking system adopted. Say/Do baseline established.
-Q3: 3+ hrs/day time-blocked consistently. 80%+ Say/Do rate achieved. Jive blog post published. Mid-year peer feedback solicited. Manager confirmation of improvement.
-Q4: Sustained adherence. Year-end peer feedback. Stop-doing list shared with Michael.
-
-2025 FEEDBACK MAPPING
-- 5A (Time Management): Overcommitment, too many concurrent workstreams, not finishing before starting new work
-- 5B (Delivery): Poor estimation, overly aggressive goals, loose ends, boiling the ocean
-- 5C (Communication): Over-detailing, derailing meetings, talking over people, unprepared, jumping topics without conclusions, not calibrating to audience
+Apr: Friday review and pre-meeting prep habits start. Begin Smart Brevity and LinkedIn Learning course.
+May-Jun: Learning complete. Time-blocking system adopted. Say/Do baseline established.
+Q3: System in daily practice. 80%+ Say/Do rate. Blog post published. Mid-year peer feedback. Manager confirmation.
+Q4: Sustained adherence. Year-end peer feedback. Stop-doing list shared.
