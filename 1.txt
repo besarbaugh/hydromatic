@@ -8,40 +8,43 @@ Key Deliverables
 
 Success Criteria
 - AP_1197326 closure evidence submitted by June 26, 2026.
-- SPTool in production as self-service platform (temporary access, app configuration, MFA opt-in) by June 2026.
+- SPTool in production as self-service platform by June 2026.
 - Custom RBAC roles deployed by May 2026; users manage app settings without Owner permissions.
 - 100% of new app registrations created through SystemID by end of June 2026.
 - Phased Owner removal underway by July 2026; >80% of eligible apps remediated by December 2026.
 
 Target Timeline
 Apr: SPTool POC complete. Custom RBAC roles finalized. SystemID in testing.
-May–Jun: AP_1197326 closure evidence submitted (hard deadline June 26). SPTool to production. SystemID handoff complete; begin phased Owner removal.
-Q3–Q4: Continue phased Owner removal. >80% of eligible apps by December.
+May-Jun: AP_1197326 closure evidence submitted (hard deadline June 26). SPTool to production. SystemID handoff complete; begin phased Owner removal.
+Q3-Q4: Continue phased Owner removal. >80% of eligible apps by December.
 
 Business Value
 Removes a systemic identity risk by eliminating persistent human ownership of cloud app registrations while preserving developer velocity through self-service, time-bound access.
 
 
--------------
+--------
 
-Establish a unified identity metadata model and extend CIDB to provide a single authoritative view of Entra identity relationships across the Firm's tenants.
+Establish a unified identity metadata model spanning Azure and GCP, and extend CIDB to provide a single authoritative view of cloud identity relationships across the Firm's tenants.
 
-Today, identity metadata is fragmented: ForgeRock-created app registrations and enterprise apps use custom security attributes, while managed identities rely on Azure resource tags. There is no unified view that ties these objects together as Entra identities or relates them to federation and consent configurations. CIDB (CloudDataInventory on Snowflake) already ingests data from Azure Graph, AWS, TAI DW, and custom metadata sources—but lacks identity relationship data.
+Identity metadata is fragmented: ForgeRock-created app registrations use custom security attributes, managed identities use Azure resource tags, and GCP service accounts follow separate conventions. No unified view ties these together or relates them to federation and consent configurations. CIDB ingests from multiple sources but lacks identity relationship data.
 
 Key Deliverables
-- Define a unified identity model that relates app registrations, enterprise apps, and managed identities regardless of metadata source (custom security attributes vs. resource tags).
-- Extend CIDB to include identity relationship data, enabling a single view of Entra identity objects tied to their federation, consent, and ownership metadata.
-- Surface orphaned, untagged, or inconsistently tagged identities for remediation and governance reporting.
-- Establish a clean data foundation to support future AI-driven workload intelligence and MCP-based tooling integration.
+- Define unified identity model spanning Entra app registrations, enterprise apps, managed identities, and GCP service accounts.
+- Collaborate with GCP team to align tagging standards and metadata capture across platforms.
+- Extend CIDB with identity relationship data covering federation, consent, and ownership for Azure and GCP.
+- Evaluate Terraform-backed service identity provisioning for IaC-managed, auditable identity lifecycle.
+- Surface orphaned or inconsistently tagged identities across both clouds for remediation.
+- Establish clean data foundation for future AI-driven workload intelligence and MCP-based tooling.
 
 Success Criteria
-- Unified identity metadata model defined by September 2026.
-- CIDB extended with identity relationship data by November 2026.
-- Orphaned and inconsistently tagged identities surfaced and remediation underway by December 2026.
+- Unified identity metadata model defined (Azure + GCP) by September 2026.
+- CIDB extended with multi-cloud identity relationship data by November 2026.
+- GCP tagging alignment documented and enforcement underway by Q4 2026.
+- Orphaned/inconsistent identities surfaced across both clouds by December 2026.
 
-Target Timeline
-Q3: Unified identity metadata model defined. CIDB integration underway.
-Q4: CIDB identity data available. Orphaned and inconsistent identities surfaced for remediation.
+Timeline
+Q3: Unified model defined. GCP tagging collaboration. CIDB integration underway. Terraform evaluation.
+Q4: CIDB data available across Azure and GCP. Orphaned identities surfaced for remediation.
 
 Business Value
-Establishes durable lifecycle governance controls and a unified identity data foundation, enabling consistent oversight, orphan detection, and future AI-driven workload intelligence and configuration recommendations.
+Establishes multi-cloud lifecycle governance and a unified identity data foundation enabling consistent oversight, orphan detection, and future AI-driven workload intelligence across the Firm's cloud footprint.
