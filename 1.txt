@@ -1,50 +1,21 @@
-Eliminate persistent human ownership of Entra ID application registrations across the Firm's tenants by closing AP_1197326 by June 26, 2026. Replace standing Owner privileges with least-privilege, time-bound access through custom RBAC roles and self-service tooling. Transition app registration creation to SystemID.
+Modernize the Workload Identity Access Management (WIAM) platform, extend it to GCP, and prototype a unified cross-cloud access management tool. Evaluate integrating identity entitlements into the landing zone framework so workload access is provisioned declaratively alongside infrastructure rather than requested after the fact.
 
 Key Deliverables
-- Custom RBAC roles: Deploy least-privilege roles scoped to required app management functions.
-- SPTool self-service platform: Enable TAM-validated temporary access grants (eonid + environment matching), app registration and enterprise app configuration, and MFA opt-in for SaaS apps. POC by late April; production by June.
-- SystemID handoff: Transition all new app registration creation to SystemID (ForgeRock front end).
-- Phased Owner removal: Execute removal across eligible apps with approved exception process for exempt use cases.
+- Complete WIAM on-prem migration from Flask monolith to FastAPI containerized architecture (carryover from 2025; test automation complete).
+- Extend WIAM self-service RBAC capabilities to GCP resources and projects using patterns proven in Azure.
+- POC a unified cross-cloud tool providing a single interface for workload identity RBAC across Azure and GCP.
+- Evaluate shifting CIAM from reactive access granting to declarative identity governance: assess embedding approved identity entitlements into landing zone Terraform modules with policy-as-code guardrails, so entitlements deploy with infrastructure. Document recommendation including WIAM's evolved role as exception handler and audit surface.
 
 Success Criteria
-- AP_1197326 closure evidence submitted by June 26, 2026.
-- SPTool in production as self-service platform by June 2026.
-- Custom RBAC roles deployed by May 2026; users manage app settings without Owner permissions.
-- 100% of new app registrations created through SystemID by end of June 2026.
-- Phased Owner removal underway by July 2026; >80% of eligible apps remediated by December 2026.
-
-Target Timeline
-Apr: SPTool POC complete. Custom RBAC roles finalized. SystemID in testing.
-May-Jun: AP_1197326 closure evidence submitted (hard deadline June 26). SPTool to production. SystemID handoff complete; begin phased Owner removal.
-Q3-Q4: Continue phased Owner removal. >80% of eligible apps by December.
-
-Business Value
-Removes a systemic identity risk by eliminating persistent human ownership of cloud app registrations while preserving developer velocity through self-service, time-bound access.
-
-
---------
-
-Establish a unified identity metadata model spanning Azure and GCP, and extend CIDB to provide a single authoritative view of cloud identity relationships across the Firm's tenants.
-
-Identity metadata is fragmented: ForgeRock-created app registrations use custom security attributes, managed identities use Azure resource tags, and GCP service accounts follow separate conventions. No unified view ties these together or relates them to federation and consent configurations. CIDB ingests from multiple sources but lacks identity relationship data.
-
-Key Deliverables
-- Define unified identity model spanning Entra app registrations, enterprise apps, managed identities, and GCP service accounts.
-- Collaborate with GCP team to align tagging standards and metadata capture across platforms.
-- Extend CIDB with identity relationship data covering federation, consent, and ownership for Azure and GCP.
-- Evaluate Terraform-backed service identity provisioning for IaC-managed, auditable identity lifecycle.
-- Surface orphaned or inconsistently tagged identities across both clouds for remediation.
-- Establish clean data foundation for future AI-driven workload intelligence and MCP-based tooling.
-
-Success Criteria
-- Unified identity metadata model defined (Azure + GCP) by September 2026.
-- CIDB extended with multi-cloud identity relationship data by November 2026.
-- GCP tagging alignment documented and enforcement underway by Q4 2026.
-- Orphaned/inconsistent identities surfaced across both clouds by December 2026.
+- WIAM on-prem migration complete (FastAPI containerized) by early Q2 2026.
+- GCP WIAM extension functional in non-prod by Q3 2026.
+- Unified cross-cloud tool POC demonstrated to CIAM leadership by Q4 2026.
+- Landing zone identity integration evaluation complete with recommendation by Q4 2026.
 
 Timeline
-Q3: Unified model defined. GCP tagging collaboration. CIDB integration underway. Terraform evaluation.
-Q4: CIDB data available across Azure and GCP. Orphaned identities surfaced for remediation.
+Apr-May: WIAM on-prem migration wrapped up and signed off.
+Q3: GCP WIAM extension in non-prod. Unified tool POC underway. Begin landing zone evaluation.
+Q4: Unified tool POC demonstrated. Operating model recommendation presented to leadership.
 
 Business Value
-Establishes multi-cloud lifecycle governance and a unified identity data foundation enabling consistent oversight, orphan detection, and future AI-driven workload intelligence across the Firm's cloud footprint.
+Modernizes CIAM's core platform while expanding to GCP. Evaluating declarative identity entitlements within landing zones positions CIAM to shift from access bottleneck to governance platform, enabling true infrastructure-on-demand where identity is provisioned alongside the resources it protects.
