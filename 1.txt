@@ -1,0 +1,40 @@
+ Transform Entra ID Application Lifecycle Management
+Objective
+Close AP_1197326 (due June 26, 2026) by eliminating persistent human ownership of Azure application registrations. Deliver custom RBAC roles and evolve SPTool into a self-service platform for temporary access grants, app configuration, and MFA opt-in—replacing standing Owner privileges entirely. Transition app registration creation to SystemID. Unify tagging across managed identities and enterprise app registrations to enable consistent lifecycle governance.
+Workstreams
+A.  Close AP_1197326 — Remove Human Owners from App Registrations
+The AP requires self-service tooling to manage commonly used app registration fields without Owner permissions, followed by phased removal of Owners with an exception process. The approach centers on repurposing SPTool as the self-service platform for Entra ID application management:
+•	Custom RBAC roles: Replace broad Owner entitlements with least-privilege grants scoped to what users actually need.
+•	SPTool as self-service platform: Repurpose SPTool to provide temporary access grants validated against TAM (eonid + environment matching), expose app registration and enterprise app configuration options, and enable MFA opt-in for SaaS apps. Future capabilities include federated credential configuration and credential management. POC target: late April.
+•	SystemID handoff: Move all new app registration creation to SystemID (ForgeRock front end).
+•	Phased owner removal: Execute removal with documented exception process for approved exempt applications.
+Longer term, SPTool is positioned to serve as an MCP server, enabling integration with the AI-driven workload intelligence model (Goal 4) to surface recommended configuration changes and developer enablement guidance directly through the tool.
+B.  Tagging Unification — Managed Identities & App Registrations
+Align the tagging taxonomy across managed identities and enterprise app/app registrations to enable consistent reporting, ownership tracking, and orphan detection. This is a prerequisite for scalable lifecycle governance and feeds directly into the AI-driven workload intelligence initiative planned under a separate goal.
+•	Define a unified tagging standard that reconciles managed identity metadata with app registration metadata.
+•	Implement tagging enforcement automation and track compliance.
+•	Surface orphaned or untagged identities for remediation.
+Success Criteria
+•	AP_1197326 closure evidence submitted by June 26 deadline.
+•	SPTool in production as self-service platform: temporary access grants, app configuration, and MFA opt-in for SaaS apps.
+•	Custom RBAC roles deployed; users can manage app registration fields without Owner permissions.
+•	100% of new app registrations created via SystemID.
+•	Phased Owner removal underway; exception process documented and operational.
+•	Unified tagging standard published; enforcement automation deployed; compliance tracked.
+Target Timeline
+
+Apr	•	SPTool temporary access and configuration POC complete by late April
+•	Custom RBAC role definitions finalized
+•	SystemID workflow in testing
+May–Jun	•	AP_1197326 closure evidence submitted (hard deadline: June 26)
+•	SPTool promoted to production: temporary access, app configuration, MFA opt-in
+•	SystemID handoff complete—all new app registrations via ForgeRock
+•	Begin phased Owner removal
+Q3	•	Tagging standard published; enforcement automation deployed
+•	Continue phased Owner removal; track progress against eligible app population
+•	Explore SPTool as MCP server; integrate with AI workload intelligence model
+Q4	•	Tagging compliance tracked and reported to leadership
+•	Owner removal >80% of eligible apps (remainder in approved exception process)
+•	SPTool roadmap for federated credential configuration and credential management
+Business Value
+Eliminates a systemic risk vector by removing persistent human ownership of cloud app registrations across the Firm’s Entra ID tenants. SPTool’s evolution into a self-service platform—covering temporary access, configuration management, and MFA opt-in—reduces standing privilege while giving application teams a better experience than portal access. Unified tagging establishes the data foundation for consistent lifecycle governance and enables the AI-driven workload intelligence initiative to operate on clean, standardized metadata. The future MCP server integration creates a path for AI-recommended configuration changes to flow directly to developers through the tooling they already use.
