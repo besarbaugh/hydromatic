@@ -1,0 +1,52 @@
+Extend workload identity access management to GCP, prototype a unified cross-cloud tool, and evaluate integrating declarative identity entitlements into the landing zone framework — eliminating the manual BYO SPN model.
+
+Today, every new landing zone requires teams to manually create an SPN via SPTool, configure federation through a separate UI, then deploy. Identity is decoupled from infrastructure. In a DR failover, infrastructure deploys via IaC but entitlements must be manually recreated, extending recovery time.
+
+Key Deliverables
+- Extend WIAM self-service RBAC to GCP resources and projects using patterns proven in Azure.
+- POC unified cross-cloud access management tool: single interface for workload identity RBAC across Azure and GCP.
+- Evaluate embedding identity provisioning into the LZ fixtures pipeline via SystemID API so SPNs are created and federated automatically — no BYO required.
+- Assess declarative RBAC entitlements deployed alongside infrastructure, ensuring identity is present in DR failover regions without manual intervention.
+- Develop cross-team proposal for fixtures integration and present to stakeholders.
+
+Success Criteria
+- GCP WIAM extension functional in non-prod by Q3 2026.
+- Unified cross-cloud tool POC demonstrated to leadership by Q4 2026.
+- Fixtures integration evaluation and cross-team proposal complete by Q4 2026.
+- Declarative entitlement pattern validated in non-prod by Q4 2026.
+
+Timeline
+Q3: GCP WIAM extension in non-prod. Unified tool POC underway. Begin fixtures and declarative entitlement evaluation.
+Q4: Unified tool POC demonstrated. Fixtures proposal presented. Declarative pattern validated.
+
+Business Value
+Extends CIAM to GCP while addressing a fundamental gap: identity should deploy with infrastructure, not after it. Declarative entitlements improve DR resilience, eliminate friction on every landing zone, and set the foundation for the 2027 platform transformation.
+
+
+----
+then 2027 goal
+
+Transform CIAM from reactive access granting into an internal identity platform where workload entitlements are provisioned declaratively alongside infrastructure across all clouds.
+
+Building on 2026 foundations (GCP extension, unified tool, fixtures evaluation), deliver an operating model where identity is code: same pipeline, same policy, same audit trail as infrastructure.
+
+Key Deliverables
+- Fixtures integration: LZ pipeline calls SystemID API to provision and federate identities automatically across Azure, GCP, and AWS. No BYO SPN.
+- Declarative RBAC: role assignments deploy with infrastructure, ensuring DR failover regions are identity-ready without manual intervention.
+- Developer identity catalog: browse approved patterns, select, provision via pipeline.
+- Multi-cloud identity abstraction: one interface resolving to the correct cloud-native construct per environment.
+- WIAM transitions to exception handler and audit surface.
+- GitOps identity state: config in Git, drift auto-detected, PR-reviewed, rollback-capable.
+- Admission control: policy engine rejects overprivileged configs before deployment.
+- AI integration: workload intelligence model validates configs pre-deployment and recommends right-sizing.
+- Federated governance pilot: select teams own identity configs within CIAM guardrails.
+
+Success Criteria
+- Fixtures integration live for at least one cloud by Q1 2027.
+- Developer identity catalog operational by mid-2027.
+- Measurable reduction in reactive access requests.
+- At least one team in federated governance pilot by H2 2027.
+- DR failover validated with declarative entitlements — zero manual identity steps.
+
+Business Value
+CIAM shifts from processing every request to publishing guardrails. Identity becomes infrastructure-as-code. DR resilience improves because entitlements deploy with infrastructure. The Firm gets true infrastructure-on-demand across its multi-cloud footprint.
